@@ -11,63 +11,312 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+    <style>
+        * {
+            font-family: "Verdana", sans-serif;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+            color: #fff;
+        }
+
+        body {
+            margin: 2rem;
+            background-color: #212123;
+        }
+
+
+        .carrosel {
+            -webkit-perspective: 250px;
+            -moz-perspective: 250px;
+            width: 400px;
+            height: 200px;
+            top: 50px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        @-webkit-keyframes efeitoCarrosel {
+            from {
+                -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        @-moz-keyframes efeitoCarrosel {
+            from {
+                -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        .caixa__card {
+            width: 90px;
+            height: 100px;
+            background-color: #442222;
+            position: absolute;
+            display: flex;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            top: 35px;
+            left: 125px;
+            font-size: 9px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+            text-align: center;
+            -webkit-animation-name: efeitoCarrosel;
+            -moz-animation-name: efeitoCarrosel;
+            -webkit-animation-duration: 24s;
+            -moz-animation-duration: 24s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+
+        .caixa__card:hover {
+            border: solid #4466cc 3px;
+            box-shadow: 0px 0px 10px #4466cc;
+        }
+
+        .caixa__card.cc__1 {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+            -webkit-animation-delay: -21s;
+            -moz-animation-delay: -21s;
+        }
+
+        .caixa__card .cc__2 {
+
+            background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+            -webkit-animation-delay: -18s;
+            -moz-animation-delay: -18s;
+        }
+
+        .caixa__card.cc__3 {
+
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+            -webkit-animation-delay: -15s;
+            -moz-animation-delay: -15s;
+        }
+
+        .caixa__card.cc__4 {
+            background: linear-gradient(-229deg, #cf91ff, #5782F5);
+            -webkit-animation-delay: -12s;
+            -moz-animation-delay: -12s;
+        }
+
+        .caixa__card.cc__5 {
+            background: linear-gradient(-229deg, #642B73, #C6426E);
+            -webkit-animation-delay: -9s;
+            -moz-animation-delay: -9s;
+        }
+
+        .caixa__card.cc__6 {
+            background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+            -webkit-animation-delay: -6s;
+            -moz-animation-delay: -6s;
+        }
+
+        .caixa__card.cc__7 {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+            -webkit-animation-delay: -3s;
+            -moz-animation-delay: -3s;
+        }
+
+        .caixa__card.cc__8 {
+            background: linear-gradient(-229deg, #1472ff, #A8EB12);
+        }
+
+        .paused_anim {
+            animation-play-state: paused;
+        }
+    </style>
 </head>
 
 <body>
-    <!--Sidebar-->
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 100vh;">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-4">Business Comment</span>
-        </a>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                    <i class="fa-solid fa-house"></i>
-                    Anasayfa
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <i class="fa-solid fa-users"></i>
-                    Kişiler
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <i class="fa-solid fa-users"></i>
-                    Kişiler
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <i class="fa-solid fa-users"></i>
-                    Kişiler
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <i class="fa-solid fa-circle-info"></i>
-                    Hakkımızda
-                </a>
-            </li>
-        </ul>
-        <hr>
-        <div class="dropdown show">
-            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" href="#"
-                role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="https://avatars.githubusercontent.com/u/91506632" alt="" width="32" height="32"
-                    class="rounded-circle me-2">
-                <strong style="margin-left: 5px;">Talha Bera</strong>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Bilgilerim</a>
-                <a class="dropdown-item" href="#">Sayfam</a>
-                <a class="dropdown-item" href="#">Çıkış Yap</a>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--Sidebar-->
+            <div class="col-lg-3">
+                <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="height: 100vh;">
+                    <a href="/"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-4">Business Comment</span>
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">
+                                <i class="fa-solid fa-house"></i>
+                                Anasayfa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <i class="fa-solid fa-users"></i>
+                                Kişiler
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <i class="fa-solid fa-users"></i>
+                                Kişiler
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <i class="fa-solid fa-users"></i>
+                                Kişiler
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <i class="fa-solid fa-circle-info"></i>
+                                Hakkımızda
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown show">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img src="https://avatars.githubusercontent.com/u/91506632" alt="" width="32" height="32"
+                                class="rounded-circle me-2">
+                            <strong style="margin-left: 5px;">Talha Bera</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Bilgilerim</a>
+                            <a class="dropdown-item" href="#">Sayfam</a>
+                            <a class="dropdown-item" href="#">Çıkış Yap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+
+
+
+
+            <!--Content-->
+            <div class="col-11 col-lg-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card bg-dark">
+                                <div class="container">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5 class="text-uppercase text-muted mb-2">
+                                                    Toplam Yorum
+                                                </h5>
+                                                <h2 class="mb-0">
+                                                    74
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="card bg-dark">
+                                <div class="container">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5 class="text-uppercase text-muted mb-2">
+                                                    Yorumlarım
+                                                </h5>
+                                                <h2 class="mb-0">
+                                                    74
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card bg-dark">
+                                <div class="container">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5 class="text-uppercase text-muted mb-2">
+                                                    Şirketteki Toplam Yorumlar
+                                                </h5>
+                                                <h2 class="mb-0">
+                                                    74
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="conteudo">
+                    <div class="carrosel" id="carro">
+                        <div class="caixa__card cc__1">PROGRAMADOR <br> CS</div>
+                        <div class="caixa__card cc__2">HTML</div>
+                        <div class="caixa__card cc__3">CSS</div>
+                        <div class="caixa__card cc__4">JS</div>
+                        <div class="caixa__card cc__5">GIT</div>
+                        <div class="caixa__card cc__6">REACT</div>
+                        <div class="caixa__card cc__7">LÓGICA</div>
+                        <div class="caixa__card cc__8">
+                            <img src="./ic-logo.png" width="40px">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -79,6 +328,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#carro")
+                .hover(function () {
+                    $(".caixa__card")
+                        .toggleClass("paused_anim")
+                });
+        })
+    </script>
 </body>
 
 </html>
