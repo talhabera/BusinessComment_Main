@@ -16,57 +16,66 @@
 </head>
 
 <body>
-     <!--Navbar-->
-     <div class="bg-light navbar navbar-expand-lg navbar-light shadow" style="height: 75px;">
-        <a class="navbar-brand" href="#">Business Comment</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
+    <div class="mainLayout">
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-bars icon"></i>
+                <i class='menu' id="btn"></i>
+            </div>
+            <ul class="sidebar-nav_list">
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Arayınız...">
+                </li>
+                <li>
+                    <a href="index.html">
                         <i class="fa-solid fa-house"></i>
-                        Anasayfa <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> <i class="fa-solid fa-users"></i>
-                        Kişiler</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        <span class="spans">Anasayfa</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                <li>
+                    <a href="persons.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="spans">Kişiler Sayfası</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user-pen"></i>
+                        <span class="spans">Kişi Detay Sayfası</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span class="spans">Giriş Sayfası</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-clipboard-question"></i>
+                        <span class="spans">Hakkımızda</span>
+                    </a>
+                </li>
+                </a>
+                </li>
+                <li class="profil">
+                    <div class="profil-detay">
+                        <div class="kullanici">
+
+                            <div class="name">Örnek Adı Soyadı</div>
+                            <div class="job">Çalıştığı Alan</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-right-to-bracket" id="login_out"></i>
                 </li>
             </ul>
         </div>
-        <div class="dropdown show">
-            <a href="#" class="text-dark text-decoration-none dropdown-toggle" href="#" role="button"
-                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="https://avatars.githubusercontent.com/u/91506632" alt="" width="32" height="32"
-                    class="rounded-circle me-2">
-                <text style="margin-left: 5px;">Talha Bera</text>
-            </a>
-            <div style="width: 200px;"></div>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Bilgilerim</a>
-                <a class="dropdown-item" href="#">Sayfam</a>
-                <a class="dropdown-item" href="#">Çıkış Yap</a>
-            </div>
-        </div>
     </div>
+
+     <!--Content-->
+     <div class="container busicom_contents">
+
 
     <div class="container">
         <div class="row">
@@ -237,6 +246,7 @@
 </div>
 </div>
 </div>
+     </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
