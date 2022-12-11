@@ -222,66 +222,25 @@
                             <?php
 
                             $personelimage = "
-                             <div>
-                             <a href=\"@cardLink\">
-                                    <img class=\"d-block float-left ml-4\" style=\"width: 230px;\"
-                                        src=\"@cardImgSrc\" alt=\"First slide\">
-                                </a>
-                        </div>
-                        ";
+                                            <div>
+                                                <a href=\"@cardLink\">
+                                                    <img class=\"d-block float-left ml-4\" style=\"width: 230px;\" src=\"@cardImgSrc\" alt=\"First slide\">
+                                                </a>
+                                            </div>";
+                            for ($i = 0; $i < 12; $i++) {
+                                if ($i == 0) echo "<div class=\"carousel-item active\">";
+                                else if ($i % 4 == 0) echo "</div>" . "<div class=\"carousel-item\">";
+                                EchoFunc(str_replace(
+                                    "@cardLink",
+                                    "#",
+                                    str_replace(
+                                        "@cardImgSrc",
+                                        "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+                                        $personelimage
+                                    )
+                                ));
+                            }
                             ?>
-
-                            <div class="carousel-item active">
-
-                                <?php
-                                for ($i = 0; $i < 4; $i++) {
-                                    EchoFunc(str_replace(
-                                        "@cardLink",
-                                        "#",
-                                        str_replace(
-                                            "@cardImgSrc",
-                                            "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-                                            $personelimage
-                                        )
-                                    ));
-                                }
-                                ?>
-
-
-                            </div>
-
-                            <div class="carousel-item">
-                                <?php
-                                for ($i = 0; $i < 4; $i++) {
-                                    EchoFunc(str_replace(
-                                        "@cardLink",
-                                        "#",
-                                        str_replace(
-                                            "@cardImgSrc",
-                                            "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-                                            $personelimage
-                                        )
-                                    ));
-                                }
-                                ?>
-
-                            </div>
-                            <div class="carousel-item">
-                                <?php
-                                for ($i = 0; $i < 4; $i++) {
-                                    EchoFunc(str_replace(
-                                        "@cardLink",
-                                        "#",
-                                        str_replace(
-                                            "@cardImgSrc",
-                                            "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-                                            $personelimage
-                                        )
-                                    ));
-                                }
-                                ?>
-
-                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
@@ -340,29 +299,38 @@
                     <div class="carousel-item active pl-5 ">
                         <?php
                         for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace( "@cardLink",
-                            "#", $referanslarDiv)));
+                            EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace(
+                                "@cardLink",
+                                "#",
+                                $referanslarDiv
+                            )));
                         }
                         ?>
-                        
+
                     </div>
                     <div class="carousel-item pl-5">
-                    <?php
+                        <?php
                         for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace( "@cardLink",
-                            "#", $referanslarDiv)));
+                            EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace(
+                                "@cardLink",
+                                "#",
+                                $referanslarDiv
+                            )));
                         }
                         ?>
-                        
+
                     </div>
                     <div class="carousel-item pl-5">
-                    <?php
+                        <?php
                         for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace( "@cardLink",
-                            "#", $referanslarDiv)));
+                            EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace(
+                                "@cardLink",
+                                "#",
+                                $referanslarDiv
+                            )));
                         }
                         ?>
-                        
+
                     </div>
                 </div>
             </div>
