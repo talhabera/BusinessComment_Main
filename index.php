@@ -21,7 +21,9 @@
     $tyorum = 722;
     $tyorumlarım = 72;
     $styorum = 523;
+    $jsonFile = file_get_contents("sample.json");
 
+    $donutList = json_decode($jsonFile);
     ?>
     <div class="mainLayout">
         <div class="sidebar">
@@ -170,9 +172,7 @@
                                             Yorumlarım
                                         </h5>
                                         <table class="table-responsive">
-                                            <?php
-                                            EchoFunc($tyorum);
-                                            ?>
+                                          
                                             <thead>
                                                 <tr>
                                                     <th scope="col">#</th>

@@ -255,3 +255,121 @@ body {
     width: 5rem;
     background: none;
 }
+.personal-card{
+    height: 320px;
+    width: 220px;
+    position: relative;
+    cursor:pointer;
+    margin:10px;
+    text-align:center;
+    padding:4px 8px;
+    
+  }
+  .personal-card .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background-color:var(--card_Background);
+    border-radius: 10px;
+    transform: translateY(0deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+    background-image:linear-gradient(to bottom right,white,teal);
+    color:#fff;
+  }
+  .personal-card:hover > .face-one{
+    transform: rotateY(-180deg);
+  }
+  .personal-card .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .personal-card .face-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+  }
+  .personal-card:hover > .face-two{
+    transform: rotateY(0deg);
+  }
+  .personal-card .face-two img{
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(350deg,teal,darkseagreen);
+  }
+  .personal-card .face-two .info{
+    text-align: center;
+  }
+  .face-two .user .title{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top:12px;
+  }
+  .face-two ul{
+    display: flex;
+  }
+  .face-two a{
+      display: inline-flex;
+      text-decoration: none;
+      font-size: 36px;
+      width: 60px;
+      height: 60px;
+      color: #f0f0f0;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0 7px;
+    }
+    .face-two a::before{
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 25%;
+      z-index: -1;
+      transition: transform .3s ease-in;
+    }
+    .face-two a:nth-child(1)::before{
+      background: #171515;
+    }
+    .face-two a:nth-child(2)::before{
+      background-color:#1c96e9;
+    }
+    .face-two a:nth-child(3)::before{
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,
+      #dc2743 50%,#cc2366 75%,#bc1888 100%);
+    }
+    .face-two a:hover::before{
+      transform: scale(0);
+    }
+    .face-two a i{
+      transition: transform .3s ease-in;
+  }
+      .face-two a:nth-child(1):hover i{
+      background: #171515;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+    }
+    .face-two a:nth-child(2):hover i{
+      background-color:#1c96e9;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+    }
+    .face-two a:nth-child(3):hover i{
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,
+      #dc2743 50%,#cc2366 75%,#bc1888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+    }

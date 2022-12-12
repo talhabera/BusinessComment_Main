@@ -1,130 +1,107 @@
 [
     {
         "id": "0001",
-        "type": "donut",
-        "name": "Cake",
-        "ppu": 0.55,
-        "batters": {
-            "batter": [
-                {
-                    "id": "1001",
-                    "type": "Regular"
-                },
-                {
-                    "id": "1002",
-                    "type": "Chocolate"
-                },
-                {
-                    "id": "1003",
-                    "type": "Blueberry"
-                },
-                {
-                    "id": "1004",
-                    "type": "Devil's Food"
-                }
-            ]
+        "isim": "donut",
+        "soyisim": "Cake",
+        "dtarihi": 0.55,
+        "telno": 42384729,
+        "email":"lksadf@lkas.com",
+        "kullaniciunvan":"program",
+        "kullaniciulke":"turkiye",
+        "kullanicisehir":"istanbul",
+        "kullaniciilce":"bahceelievler",
+        "kayittarihi":1231124,
+            "kullanici_tip_id":{
+                "kullanıcı_tip_tanim":"bilgi işlem"
+    },
+        "sirketid":{
+            "sirketadi":"babala",
+            "sektorid":{
+                "sektortanim":"elektronik"
+            },
+            "sirketulke":"türkiye",
+            "sirketsehir":"istanbul",
+            "sirketilce":"bahçelievler"
         },
-        "topping": [
-            {
-                "id": "5001",
-                "type": "None"
-            },
-            {
-                "id": "5002",
-                "type": "Glazed"
-            },
-            {
-                "id": "5005",
-                "type": "Sugar"
-            },
-            {
-                "id": "5007",
-                "type": "Powdered Sugar"
-            },
-            {
-                "id": "5006",
-                "type": "Chocolate with Sprinkles"
-            },
-            {
-                "id": "5003",
-                "type": "Chocolate"
-            },
-            {
-                "id": "5004",
-                "type": "Maple"
-            }
-        ]
+        "yorumyapilsinmi":true,
+        "yorumlar":{
+            "yorumid":1,
+            "yorumicerik":"kdafakdfklklkd",
+            "yorumdurum":true,
+            "yorumtarihi":12312
+        }
+
+
+
     },
     {
         "id": "0002",
-        "type": "donut",
-        "name": "Raised",
-        "ppu": 0.55,
-        "batters": {
-            "batter": [
-                {
-                    "id": "1001",
-                    "type": "Regular"
-                }
-            ]
+        "isim": "dosdfnut",
+        "soyisim": "Caafke",
+        "dtarihi": 0.553,
+        "telno": 4238473429,
+        "email":"lksadf@l23kas.com",
+        "kullaniciunvan":"p32rogram",
+        "kullaniciulke":"turksdfiye",
+        "kullanicisehir":"istanbsdul",
+        "kullaniciilce":"bahceelifdevler",
+        "kayittarihi":123112443,
+            "kullanici_tip_id":{
+                "kullanıcı_tip_tanim":"badilgi işlem"
+    },
+        "sirketid":{
+            "sirketadi":"babsaala",
+            "sektorid":{
+                "sektortanim":"eflektronik"
+            },
+            "sirketulke":"türkiyesaffs",
+            "sirketsehir":"istanbufafl",
+            "sirketilce":"bahçelievlasdfer"
         },
-        "topping": [
-            {
-                "id": "5001",
-                "type": "None"
-            },
-            {
-                "id": "5002",
-                "type": "Glazed"
-            },
-            {
-                "id": "5005",
-                "type": "Sugar"
-            },
-            {
-                "id": "5003",
-                "type": "Chocolate"
-            },
-            {
-                "id": "5004",
-                "type": "Maple"
-            }
-        ]
+        "yorumyapilsinmi":true,
+        "yorumlar":{
+            "yorumid":1,
+            "yorumicerik":"kdadgfakdfklklkd",
+            "yorumdurum":true,
+            "yorumtarihi":12312
+        }
+
+
+
     },
     {
-        "id": "0003",
-        "type": "donut",
-        "name": "Old Fashioned",
-        "ppu": 0.55,
-        "batters": {
-            "batter": [
-                {
-                    "id": "1001",
-                    "type": "Regular"
-                },
-                {
-                    "id": "1002",
-                    "type": "Chocolate"
-                }
-            ]
+        "id": "0001",
+        "isim": "donut",
+        "soyisim": "Cake",
+        "dtarihi": 0.55,
+        "telno": 42384729,
+        "email":"lksadf@lkas.com",
+        "kullaniciunvan":"program",
+        "kullaniciulke":"turkiye",
+        "kullanicisehir":"istanbul",
+        "kullaniciilce":"bahceelievler",
+        "kayittarihi":1231124,
+            "kullanici_tip_id":{
+                "kullanıcı_tip_tanim":"bilgi işlem"
+    },
+        "sirketid":{
+            "sirketadi":"babala",
+            "sektorid":{
+                "sektortanim":"elektronik"
+            },
+            "sirketulke":"türkiye",
+            "sirketsehir":"istanbul",
+            "sirketilce":"bahçelievler"
         },
-        "topping": [
-            {
-                "id": "5001",
-                "type": "None"
-            },
-            {
-                "id": "5002",
-                "type": "Glazed"
-            },
-            {
-                "id": "5003",
-                "type": "Chocolate"
-            },
-            {
-                "id": "5004",
-                "type": "Maple"
-            }
-        ]
+        "yorumyapilsinmi":true,
+        "yorumlar":{
+            "yorumid":1,
+            "yorumicerik":"kdafakdfklklkd",
+            "yorumdurum":true,
+            "yorumtarihi":12312
+        }
+
+
+
     }
 ]

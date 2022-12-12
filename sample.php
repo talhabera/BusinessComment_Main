@@ -2,20 +2,15 @@
 $jsonFile = file_get_contents("sample.json");
 
 $donutList = json_decode($jsonFile);
-echo $donutList[0]->type;
+echo $donutList[0]->kullanici_tip_id->kullanıcı_tip_tanim;
 echo $donutList[0]->id;
 echo $donutList[0]->id;
 echo $donutList[0]->id;
-echo $donutList[0]->id;
-echo $donutList[0]->batters->batter[1]->type;
-echo $donutList[0]->ppu;
-echo $donutList[0]->name;
-echo $donutList[0]->type;
 echo $donutList[1]->id;
 
 
 
-
+/*
 $result = file_get_contents(
     "http://server.com/path",
     context: stream_context_create(array('http' => array(
@@ -24,6 +19,7 @@ $result = file_get_contents(
     )))
 );
 if ($result === FALSE) {
-    /* ERROR DÖNERSE BURASI ÇALIŞIR */
+    /* ERROR DÖNERSE BURASI ÇALIŞIR *//*
 }
 $kisiBilgisi = json_decode($result);
+*/
