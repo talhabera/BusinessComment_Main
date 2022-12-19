@@ -1,9 +1,9 @@
 [
     {
-        "yorumYapilankisi": "ahmet",
-        "yorumYapankisi":"hüseyin",
-        "yorum":"ahmey çok iyi bir insandır",
-        "yorumTarrihi":"18.11.2000"
+        "YorumYapilankisi": "ahmet",
+        "YorumYapankisi":"hüseyin",
+        "Yorum":"ahmey çok iyi bir insandır",
+        "YorumTarihi":"18.11.2000"
     }
 
 ]
