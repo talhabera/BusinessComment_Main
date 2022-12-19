@@ -2,7 +2,7 @@
     {
         
      
-        "İsim": "donut",
+        "Isim": "donut",
         "Soyisim": "Cake",
         "DTarihi": 0.55,
         "Telno": 42384729,
@@ -10,7 +10,7 @@
         "KullaniciUnvan": "program",
         "KullaniciUlke": "turkiye",
         "KullaniciSehir": "istanbul",
-        "Kullaniciİlce": "bahceelievler",
+        "KullaniciIlce": "bahceelievler",
         "KayitTarihi": 1231124,
         "Resim":"imgsrc"
         
