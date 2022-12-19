@@ -2,17 +2,17 @@
     {
         
      
-        "isim": "donut",
-        "soyisim": "Cake",
-        "dtarihi": 0.55,
-        "telno": 42384729,
-        "email": "lksadf@lkas.com",
-        "kullaniciunvan": "program",
-        "kullaniciulke": "turkiye",
-        "kullanicisehir": "istanbul",
-        "kullaniciilce": "bahceelievler",
-        "kayittarihi": 1231124,
-        "resim":"imgsrc"
+        "İsim": "donut",
+        "Soyisim": "Cake",
+        "DTarihi": 0.55,
+        "Telno": 42384729,
+        "Email": "lksadf@lkas.com",
+        "KullaniciUnvan": "program",
+        "KullaniciUlke": "turkiye",
+        "KullaniciSehir": "istanbul",
+        "Kullaniciİlce": "bahceelievler",
+        "KayitTarihi": 1231124,
+        "Resim":"imgsrc"
         
     }
 ]

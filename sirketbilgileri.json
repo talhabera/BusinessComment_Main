@@ -1,10 +1,10 @@
 [
     {
-        "sirketadi": "babsaala",
-        "sektortanim": "eflektronik",
-        "sirketulke": "türkiyesaffs",
-        "sirketsehir": "istanbufafl",
-        "sirketilce": "bahçelievlasdfer",
-        "logo":"imgsrc"
+        "SirketAdi": "babsaala",
+        "SektorTanim": "eflektronik",
+        "SirketUlke": "türkiyesaffs",
+        "SirketSehir": "istanbufafl",
+        "Sirketİlce": "bahçelievlasdfer",
+        "Logo":"imgsrc"
     }
 ]
