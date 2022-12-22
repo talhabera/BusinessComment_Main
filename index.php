@@ -18,12 +18,18 @@
     {
         echo $message;
     }
-    $tyorum = 722;
-    $tyorumlarım = 72;
-    $styorum = 523;
-    $jsonFile = file_get_contents("sample.json");
+    $jsonFilePersonel = file_get_contents("personelbilgileri.json");
+    $jsonFileDashboard = file_get_contents("dashboard.json");
+    $jsonfileSirketbilgileri=file_get_contents("sirketbilgileri.json");
+    
+    $donutListDashboard = json_decode($jsonFileDashboard);
+    $donutListSirketbilgileri = json_decode($jsonfileSirketbilgileri);
+    $donutListPersonel = json_decode($jsonFilePersonel);
+    $tyorum = $donutListDashboard[0]->YapilanToplamYorum;
+    $tyorumlarım = $donutListDashboard[0]->ToplamYaptigimYorum;
+    $styorum = $donutListDashboard[0]->SirketteYapilanToplamYorum;
 
-    $donutList = json_decode($jsonFile);
+
     ?>
     <div class="mainLayout">
         <div class="sidebar">
@@ -235,7 +241,7 @@
                                     "#",
                                     str_replace(
                                         "@cardImgSrc",
-                                        "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+                                        $donutListPersonel[0]->Resim,
                                         $personelimage
                                     )
                                 ));
@@ -274,7 +280,7 @@
                                                 </div>
                                             </div>";
                             for ($i = 0; $i < 8; $i++) {
-                                EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace("@cardTitle", "İsim$i", str_replace("@cardText", "Yazı$i", $yoneticiDiv))));
+                                EchoFunc(str_replace("@cardImgSrc", $donutListPersonel[0]->Resim, str_replace("@cardTitle", $donutListPersonel[0]->Isim, str_replace("@cardText", $donutListPersonel[0]->KullaniciUnvan, $yoneticiDiv))));
                             }
                             ?>
 
@@ -299,7 +305,7 @@
                     <div class="carousel-item active pl-5 ">
                         <?php
                         for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace(
+                            EchoFunc(str_replace("@cardImgSrc", $donutListSirketbilgileri[0]->Logo, str_replace(
                                 "@cardLink",
                                 "#",
                                 $referanslarDiv
@@ -311,8 +317,8 @@
                     <div class="carousel-item pl-5">
                         <?php
                         for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace(
-                                "@cardLink",
+                            EchoFunc(str_replace("@cardImgSrc",  $donutListSirketbilgileri[0]->Logo, str_replace(
+                            "@cardLink",
                                 "#",
                                 $referanslarDiv
                             )));
@@ -323,7 +329,7 @@
                     <div class="carousel-item pl-5">
                         <?php
                         for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc", "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg", str_replace(
+                            EchoFunc(str_replace("@cardImgSrc",  $donutListSirketbilgileri[0]->Logo, str_replace(
                                 "@cardLink",
                                 "#",
                                 $referanslarDiv
@@ -331,7 +337,7 @@
                         }
                         ?>
 
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
