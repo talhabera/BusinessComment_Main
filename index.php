@@ -29,7 +29,7 @@
     $listSirketbilgileri = json_decode($jsonSirketbilgileri);
     $listPersonel = json_decode($jsonPersonel);
     $toplamYorum = $listDashboard[0]->YapilanToplamYorum;
-    $toplamYorumlarım = $listDashboard[0]->ToplamYaptigimYorum;
+    $toplamYorumlarim = $listDashboard[0]->ToplamYaptigimYorum;
     $sirketteypilanYorum = $listDashboard[0]->SirketteYapilanToplamYorum;
 
 
@@ -136,7 +136,7 @@
                                                     </h6>
                                                     <h2 class="mb-0">
                                                         <?php
-                                                        EchoFunc($toplamYorumlarım);
+                                                        EchoFunc($toplamYorumlarim);
                                                         ?>
                                                     </h2>
                                                 </div>
