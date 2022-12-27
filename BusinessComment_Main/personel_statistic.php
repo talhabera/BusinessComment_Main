@@ -20,13 +20,13 @@
     {
         echo $message;
     }
-    $jsonFilePersonel = file_get_contents("personelbilgileri.json");
-    $jsonFileYorumlar = file_get_contents("yorumlar.json");
+    $jsonPersonel = file_get_contents("personelbilgileri.json");
+    $jsonYorumlar = file_get_contents("yorumlar.json");
 
 
 
-    $donutListPersonel = json_decode($jsonFilePersonel);
-    $donutListYorumlar = json_decode($jsonFileYorumlar);
+    $listPersonel = json_decode($jsonPersonel);
+    $listYorumlar = json_decode($jsonYorumlar);
 
 
 
@@ -110,22 +110,22 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">İsim</th>
-                                    <td><?php echo $donutListPersonel[0]->Isim ?></td>
+                                    <td><?php echo $listPersonel[0]->Isim ?></td>
 
                                 </tr>
                                 <tr>
                                     <th scope="row">Soy İsim</th>
-                                    <td><?php echo $donutListPersonel[0]->Soyisim ?></td>
+                                    <td><?php echo $listPersonel[0]->Soyisim ?></td>
 
                                 </tr>
                                 <tr>
                                     <th scope="row">Departman</th>
-                                    <td><?php echo $donutListPersonel[0]->Departman ?></td>
+                                    <td><?php echo $listPersonel[0]->Departman ?></td>
 
                                 </tr>
                                 <tr>
                                     <th scope="row">Ünvanı</th>
-                                    <td><?php echo $donutListPersonel[0]->KullaniciUnvan ?></td>
+                                    <td><?php echo $listPersonel[0]->KullaniciUnvan ?></td>
 
                                 </tr>
                             </tbody>
@@ -146,7 +146,7 @@
                                                     Toplam Yaptığı Yorum
                                                 </h6>
                                                 <h2 class="mb-0">
-                                                    <?php echo $donutListPersonel[0]->YaptigiYorumSayisi ?>
+                                                    <?php echo $listPersonel[0]->YaptigiYorumSayisi ?>
                                                 </h2>
                                             </div>
                                         </div>
@@ -168,7 +168,7 @@
                                                     Toplam Yapılan Yorum
                                                 </h6>
                                                 <h2 class="mb-0">
-                                                    <?php echo $donutListPersonel[0]->YapilanYorumSayisi ?>
+                                                    <?php echo $listPersonel[0]->YapilanYorumSayisi ?>
 
                                                 </h2>
                                             </div>
@@ -221,7 +221,7 @@
                                                             $i,
                                                             str_replace(
                                                                 "message",
-                                                                $donutListYorumlar[0]->Yorum,
+                                                                $listYorumlar[0]->Yorum,
                                                                 
                                                                         $tablo
                                                                     )

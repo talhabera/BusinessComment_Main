@@ -1,12 +1,12 @@
 <?php
-$jsonFile = file_get_contents("sample.json");
+$json = file_get_contents("sample.json");
 
-$donutList = json_decode($jsonFile);
-echo $donutList[0]->kullanici_tip_id->kullanıcı_tip_tanim;
-echo $donutList[0]->id;
-echo $donutList[0]->id;
-echo $donutList[0]->id;
-echo $donutList[1]->id;
+$list = json_decode($json);
+echo $list[0]->kullanici_tip_id->kullanıcı_tip_tanim;
+echo $list[0]->id;
+echo $list[0]->id;
+echo $list[0]->id;
+echo $list[1]->id;
 
 
 

@@ -18,19 +18,19 @@
     {
         echo $message;
     }
-    $jsonFilePersonel = file_get_contents("personelbilgileri.json");
-    $jsonFileDashboard = file_get_contents("dashboard.json");
-    $jsonfileSirketbilgileri = file_get_contents("sirketbilgileri.json");
-    $jsonfileYorumlar = file_get_contents("yorumlar.json");
+    $jsonPersonel = file_get_contents("personelbilgileri.json");
+    $jsonDashboard = file_get_contents("dashboard.json");
+    $jsonSirketbilgileri = file_get_contents("sirketbilgileri.json");
+    $jsonYorumlar = file_get_contents("yorumlar.json");
 
-    $donutListYorumlar = json_decode($jsonfileYorumlar);
+    $listYorumlar = json_decode($jsonYorumlar);
 
-    $donutListDashboard = json_decode($jsonFileDashboard);
-    $donutListSirketbilgileri = json_decode($jsonfileSirketbilgileri);
-    $donutListPersonel = json_decode($jsonFilePersonel);
-    $tyorum = $donutListDashboard[0]->YapilanToplamYorum;
-    $tyorumlarım = $donutListDashboard[0]->ToplamYaptigimYorum;
-    $styorum = $donutListDashboard[0]->SirketteYapilanToplamYorum;
+    $listDashboard = json_decode($jsonDashboard);
+    $listSirketbilgileri = json_decode($jsonSirketbilgileri);
+    $listPersonel = json_decode($jsonPersonel);
+    $toplamYorum = $listDashboard[0]->YapilanToplamYorum;
+    $toplamYorumlarım = $listDashboard[0]->ToplamYaptigimYorum;
+    $sirketteypilanYorum = $listDashboard[0]->SirketteYapilanToplamYorum;
 
 
     ?>
@@ -114,7 +114,7 @@
                                                     </h6>
                                                     <h2 class="mb-0">
                                                         <?php
-                                                        EchoFunc($tyorum);
+                                                        EchoFunc($toplamYorum);
                                                         ?>
 
                                                     </h2>
@@ -136,7 +136,7 @@
                                                     </h6>
                                                     <h2 class="mb-0">
                                                         <?php
-                                                        EchoFunc($styorum);
+                                                        EchoFunc($toplamYorumlarım);
                                                         ?>
                                                     </h2>
                                                 </div>
@@ -156,7 +156,7 @@
                                                     </h6>
                                                     <h2 class="mb-0">
                                                         <?php
-                                                        EchoFunc($tyorum);
+                                                        EchoFunc($sirketteypilanYorum);
                                                         ?>
                                                     </h2>
                                                 </div>
@@ -208,13 +208,13 @@
                                                         $i,
                                                         str_replace(
                                                             "name",
-                                                            $donutListPersonel[0]->Isim,
+                                                            $listPersonel[0]->Isim,
                                                             str_replace(
                                                                 "sorname",
-                                                                $donutListPersonel[0]->Soyisim,
+                                                                $listPersonel[0]->Soyisim,
                                                                 str_replace(
                                                                     "message",
-                                                                    $donutListYorumlar[0]->Yorum,
+                                                                    $listYorumlar[0]->Yorum,
 
                                                                     $tablo
                                                                 )
@@ -257,7 +257,7 @@
                                     "#",
                                     str_replace(
                                         "@cardImgSrc",
-                                        $donutListPersonel[0]->Resim,
+                                        $listPersonel[0]->Resim,
                                         $personelimage
                                     )
                                 ));
@@ -296,7 +296,7 @@
                                                 </div>
                                             </div>";
                             for ($i = 0; $i < 8; $i++) {
-                                EchoFunc(str_replace("@cardImgSrc", $donutListPersonel[0]->Resim, str_replace("@cardTitle", $donutListPersonel[0]->Isim, str_replace("@cardText", $donutListPersonel[0]->KullaniciUnvan, $yoneticiDiv))));
+                                EchoFunc(str_replace("@cardImgSrc", $listPersonel[0]->Resim, str_replace("@cardTitle", $listPersonel[0]->Isim, str_replace("@cardText", $listPersonel[0]->KullaniciUnvan, $yoneticiDiv))));
                             }
                             ?>
 
@@ -321,7 +321,7 @@
                     <div class="carousel-item active pl-5 ">
                         <?php
                         for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc", $donutListSirketbilgileri[0]->Logo, str_replace(
+                            EchoFunc(str_replace("@cardImgSrc", $listSirketbilgileri[0]->Logo, str_replace(
                                 "@cardLink",
                                 "#",
                                 $referanslarDiv
@@ -333,7 +333,7 @@
                     <div class="carousel-item pl-5">
                         <?php
                         for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc",  $donutListSirketbilgileri[0]->Logo, str_replace(
+                            EchoFunc(str_replace("@cardImgSrc",  $listSirketbilgileri[0]->Logo, str_replace(
                                 "@cardLink",
                                 "#",
                                 $referanslarDiv
@@ -345,7 +345,7 @@
                     <div class="carousel-item pl-5">
                         <?php
                         for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc",  $donutListSirketbilgileri[0]->Logo, str_replace(
+                            EchoFunc(str_replace("@cardImgSrc",  $listSirketbilgileri[0]->Logo, str_replace(
                                 "@cardLink",
                                 "#",
                                 $referanslarDiv

@@ -18,10 +18,10 @@
     {
         echo $message;
     }
-    $jsonFilePersonel = file_get_contents("personelbilgileri.json");
+    $jsonPersonel = file_get_contents("personelbilgileri.json");
 
 
-    $donutListPersonel = json_decode($jsonFilePersonel);
+    $listPersonel = json_decode($jsonPersonel);
 
 
     ?>
@@ -113,11 +113,11 @@
                             for ($i = 0; $i < 8; $i++) {
                                 EchoFunc(str_replace(
                                     "@cardImgSrc",
-                                    $donutListPersonel[0]->Resim,
+                                    $listPersonel[0]->Resim,
                                     str_replace(
                                         "@cardTitle",
-                                        $donutListPersonel[0]->Isim,
-                                        str_replace("@cardText", $donutListPersonel[0]->KullaniciUnvan, $kullaniciDiv)
+                                        $listPersonel[0]->Isim,
+                                        str_replace("@cardText", $listPersonel[0]->KullaniciUnvan, $kullaniciDiv)
                                     )
                                 ));
                             }
