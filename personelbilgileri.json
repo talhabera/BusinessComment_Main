@@ -13,7 +13,10 @@
         "KullaniciSehir": "istanbul",
         "KullaniciIlce": "bahceelievler",
         "KayitTarihi": 1231124,
-        "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg"
-        
+        "Departman":"Bilgi işlem",
+        "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+        "YaptigiYorumSayisi":11,
+        "YapilanYorumSayisi":11
+
     }
 ]

@@ -20,8 +20,11 @@
     }
     $jsonFilePersonel = file_get_contents("personelbilgileri.json");
     $jsonFileDashboard = file_get_contents("dashboard.json");
-    $jsonfileSirketbilgileri=file_get_contents("sirketbilgileri.json");
-    
+    $jsonfileSirketbilgileri = file_get_contents("sirketbilgileri.json");
+    $jsonfileYorumlar = file_get_contents("yorumlar.json");
+
+    $donutListYorumlar = json_decode($jsonfileYorumlar);
+
     $donutListDashboard = json_decode($jsonFileDashboard);
     $donutListSirketbilgileri = json_decode($jsonfileSirketbilgileri);
     $donutListPersonel = json_decode($jsonFilePersonel);
@@ -178,7 +181,7 @@
                                             Yorumlarım
                                         </h5>
                                         <table class="table-responsive">
-                                          
+
                                             <thead>
                                                 <tr>
                                                     <th scope="col">#</th>
@@ -188,26 +191,39 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>
-                                                        @mdafsdfasfsadfsadfadsfasfadsfsdfassdfdsafsdfasdfsoadsjkfljsdlkfjasdlfjasdlkjfasldjflsad
-                                                        sdafjsdalfj af lksda j aslfj sadl flksda lsd kalsfalsj
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+
+                                                $tablo = "
+                                                                <tr>
+
+                                                                    <th scope=\"row\">number</th>
+                                                                    <td>name</td>
+                                                                    <td>sorname</td>
+                                                                    <td>message</td>
+                                                                </tr>";
+                                                for ($i = 1; $i < 12; $i++) {
+                                                    EchoFunc(str_replace(
+                                                        "number",
+                                                        $i,
+                                                        str_replace(
+                                                            "name",
+                                                            $donutListPersonel[0]->Isim,
+                                                            str_replace(
+                                                                "sorname",
+                                                                $donutListPersonel[0]->Soyisim,
+                                                                str_replace(
+                                                                    "message",
+                                                                    $donutListYorumlar[0]->Yorum,
+
+                                                                    $tablo
+                                                                )
+                                                            )
+                                                        )
+                                                    ));
+                                                }
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -318,7 +334,7 @@
                         <?php
                         for ($i = 0; $i < 5; $i++) {
                             EchoFunc(str_replace("@cardImgSrc",  $donutListSirketbilgileri[0]->Logo, str_replace(
-                            "@cardLink",
+                                "@cardLink",
                                 "#",
                                 $referanslarDiv
                             )));
@@ -337,7 +353,7 @@
                         }
                         ?>
 
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
