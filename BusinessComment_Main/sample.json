@@ -1,0 +1,98 @@
+[
+    {
+        "id": "0001",
+        "isim": "donut",
+        "soyisim": "Cake",
+        "dtarihi": 0.55,
+        "telno": 42384729,
+        "email": "lksadf@lkas.com",
+        "kullaniciunvan": "program",
+        "kullaniciulke": "turkiye",
+        "kullanicisehir": "istanbul",
+        "kullaniciilce": "bahceelievler",
+        "kayittarihi": 1231124,
+        "kullanici_tip_id": {
+            "kullanıcı_tip_tanim": "bilgi işlem"
+        },
+        "sirketid": {
+            "sirketadi": "babala",
+            "sektorid": {
+                "sektortanim": "elektronik"
+            },
+            "sirketulke": "türkiye",
+            "sirketsehir": "istanbul",
+            "sirketilce": "bahçelievler"
+        },
+        "yorumyapilsinmi": true,
+        "yorumlar": {
+            "yorumid": 1,
+            "yorumicerik": "kdafakdfklklkd",
+            "yorumdurum": true,
+            "yorumtarihi": 12312
+        }
+    },
+    {
+        "id": "0002",
+        "isim": "dosdfnut",
+        "soyisim": "Caafke",
+        "dtarihi": 0.553,
+        "telno": 4238473429,
+        "email": "lksadf@l23kas.com",
+        "kullaniciunvan": "p32rogram",
+        "kullaniciulke": "turksdfiye",
+        "kullanicisehir": "istanbsdul",
+        "kullaniciilce": "bahceelifdevler",
+        "kayittarihi": 123112443,
+        "kullanici_tip_id": {
+            "kullanıcı_tip_tanim": "badilgi işlem"
+        },
+        "sirketid": {
+            "sirketadi": "babsaala",
+            "sektorid": {
+                "sektortanim": "eflektronik"
+            },
+            "sirketulke": "türkiyesaffs",
+            "sirketsehir": "istanbufafl",
+            "sirketilce": "bahçelievlasdfer"
+        },
+        "yorumyapilsinmi": true,
+        "yorumlar": {
+            "yorumid": 1,
+            "yorumicerik": "kdadgfakdfklklkd",
+            "yorumdurum": true,
+            "yorumtarihi": 12312
+        }
+    },
+    {
+        "id": "0001",
+        "isim": "donut",
+        "soyisim": "Cake",
+        "dtarihi": 0.55,
+        "telno": 42384729,
+        "email": "lksadf@lkas.com",
+        "kullaniciunvan": "program",
+        "kullaniciulke": "turkiye",
+        "kullanicisehir": "istanbul",
+        "kullaniciilce": "bahceelievler",
+        "kayittarihi": 1231124,
+        "kullanici_tip_id": {
+            "kullanıcı_tip_tanim": "bilgi işlem"
+        },
+        "sirketid": {
+            "sirketadi": "babala",
+            "sektorid": {
+                "sektortanim": "elektronik"
+            },
+            "sirketulke": "türkiye",
+            "sirketsehir": "istanbul",
+            "sirketilce": "bahçelievler"
+        },
+        "yorumyapilsinmi": true,
+        "yorumlar": {
+            "yorumid": 1,
+            "yorumicerik": "kdafakdfklklkd",
+            "yorumdurum": true,
+            "yorumtarihi": 12312
+        }
+    }
+]
