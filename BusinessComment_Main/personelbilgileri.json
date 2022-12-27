@@ -1,0 +1,22 @@
+[
+    {
+        
+     
+
+        "Isim": "donut",
+        "Soyisim": "Cake",
+        "DTarihi": 0.55,
+        "Telno": 42384729,
+        "Email": "lksadf@lkas.com",
+        "KullaniciUnvan": "program",
+        "KullaniciUlke": "turkiye",
+        "KullaniciSehir": "istanbul",
+        "KullaniciIlce": "bahceelievler",
+        "KayitTarihi": 1231124,
+        "Departman":"Bilgi işlem",
+        "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+        "YaptigiYorumSayisi":11,
+        "YapilanYorumSayisi":11
+
+    }
+]
