@@ -19,6 +19,7 @@
         echo $message;
     }
     $jsonPersonel = file_get_contents("personelbilgileri.json");
+    $jsonYonetici = file_get_contents("yoneticibilgileri.json");
     $jsonDashboard = file_get_contents("dashboard.json");
     $jsonSirketbilgileri = file_get_contents("sirketbilgileri.json");
     $jsonYorumlar = file_get_contents("yorumlar.json");
@@ -28,10 +29,13 @@
     $listDashboard = json_decode($jsonDashboard);
     $listSirketbilgileri = json_decode($jsonSirketbilgileri);
     $listPersonel = json_decode($jsonPersonel);
+    $listYonetici = json_decode($jsonYonetici);
     $toplamYorum = $listDashboard[0]->YapilanToplamYorum;
     $toplamYorumlarim = $listDashboard[0]->ToplamYaptigimYorum;
     $sirketteypilanYorum = $listDashboard[0]->SirketteYapilanToplamYorum;
-
+    $personelSayisi= count($listPersonel);
+    $yoneticiSayisi= count($listYonetici);
+    $yorumSayisi=count($listYorumlar);
 
     ?>
     <div class="mainLayout">
@@ -46,19 +50,19 @@
                     <input type="text" placeholder="Arayınız...">
                 </li>
                 <li>
-                    <a href="index.html">
+                    <a href="index.php">
                         <i class="fa-solid fa-house"></i>
                         <span class="spans">Anasayfa</span>
                     </a>
                 </li>
                 <li>
-                    <a href="persons.html">
+                    <a href="persons.php">
                         <i class="fa-solid fa-users"></i>
                         <span class="spans">Kişiler Sayfası</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="profile.php">
                         <i class="fa-solid fa-user-pen"></i>
                         <span class="spans">Kişi Detay Sayfası</span>
                     </a>
@@ -186,7 +190,7 @@
                                                 <tr>
                                                     <th scope="col">#</th>
                                                     <th scope="col">İsim</th>
-                                                    <th scope="col">Ünvanı</th>
+                                                    <th scope="col">Yorum Tarihi</th>
                                                     <th scope="col">Yorum</th>
                                                 </tr>
                                             </thead>
@@ -202,19 +206,19 @@
                                                                     <td>sorname</td>
                                                                     <td>message</td>
                                                                 </tr>";
-                                                for ($i = 1; $i < 12; $i++) {
+                                                for ($i = 0; $i < $yorumSayisi; $i++) {
                                                     EchoFunc(str_replace(
                                                         "number",
-                                                        $i,
+                                                        1+$i,
                                                         str_replace(
                                                             "name",
-                                                            $listPersonel[0]->Isim,
+                                                            $listYorumlar[$i]->YorumYapilankisi,
                                                             str_replace(
                                                                 "sorname",
-                                                                $listPersonel[0]->Soyisim,
+                                                                $listYorumlar[$i]->YorumTarihi,
                                                                 str_replace(
                                                                     "message",
-                                                                    $listYorumlar[0]->Yorum,
+                                                                    $listYorumlar[$i]->Yorum,
 
                                                                     $tablo
                                                                 )
@@ -249,7 +253,7 @@
                                                     <img class=\"d-block float-left ml-4\" style=\"width: 230px;\" src=\"@cardImgSrc\" alt=\"First slide\">
                                                 </a>
                                             </div>";
-                            for ($i = 0; $i < 12; $i++) {
+                            for ($i = 0; $i < $personelSayisi; $i++) {
                                 if ($i == 0) echo "<div class=\"carousel-item active\">";
                                 else if ($i % 4 == 0) echo "</div>" . "<div class=\"carousel-item\">";
                                 EchoFunc(str_replace(
@@ -257,7 +261,7 @@
                                     "#",
                                     str_replace(
                                         "@cardImgSrc",
-                                        $listPersonel[0]->Resim,
+                                        $listPersonel[$i]->Resim,
                                         $personelimage
                                     )
                                 ));
@@ -295,8 +299,8 @@
                                                     </div>
                                                 </div>
                                             </div>";
-                            for ($i = 0; $i < 8; $i++) {
-                                EchoFunc(str_replace("@cardImgSrc", $listPersonel[0]->Resim, str_replace("@cardTitle", $listPersonel[0]->Isim, str_replace("@cardText", $listPersonel[0]->KullaniciUnvan, $yoneticiDiv))));
+                            for ($i = 0; $i < $yoneticiSayisi; $i++) {
+                                EchoFunc(str_replace("@cardImgSrc", $listYonetici[$i]->Resim, str_replace("@cardTitle", $listYonetici[$i]->Isim, str_replace("@cardText", $listYonetici[$i]->KullaniciUnvan, $yoneticiDiv))));
                             }
                             ?>
 
@@ -318,9 +322,11 @@
                         <img class=\"d-block float-left mr-5 ml-5\" style=\"width: 100px;\" src=\"@cardImgSrc\" alt=\"First slide\">
                     </a>"
                     ?>
-                    <div class="carousel-item active pl-5 ">
+
                         <?php
-                        for ($i = 0; $i < 5; $i++) {
+                        for ($i = 0; $i < 15; $i++) {
+                            if ($i == 0) echo " <div class=\"carousel-item active pl-1 \">";
+                            else if ($i % 6 == 0) echo "</div>" . "<div class=\"carousel-item pl-1\">";
                             EchoFunc(str_replace("@cardImgSrc", $listSirketbilgileri[0]->Logo, str_replace(
                                 "@cardLink",
                                 "#",
@@ -329,31 +335,9 @@
                         }
                         ?>
 
-                    </div>
-                    <div class="carousel-item pl-5">
-                        <?php
-                        for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc",  $listSirketbilgileri[0]->Logo, str_replace(
-                                "@cardLink",
-                                "#",
-                                $referanslarDiv
-                            )));
-                        }
-                        ?>
 
-                    </div>
-                    <div class="carousel-item pl-5">
-                        <?php
-                        for ($i = 0; $i < 5; $i++) {
-                            EchoFunc(str_replace("@cardImgSrc",  $listSirketbilgileri[0]->Logo, str_replace(
-                                "@cardLink",
-                                "#",
-                                $referanslarDiv
-                            )));
-                        }
-                        ?>
 
-                    </div>
+
                 </div>
             </div>
         </div>

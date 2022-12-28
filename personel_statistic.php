@@ -27,7 +27,8 @@
 
     $listPersonel = json_decode($jsonPersonel);
     $listYorumlar = json_decode($jsonYorumlar);
-
+    $personelSayisi= count($listPersonel);
+    $yorumSayisi= count($listYorumlar);
 
 
     ?>
@@ -215,13 +216,13 @@
                                                                 message
                                                                 </td>
                                                             </tr>";
-                                                    for ($i = 1; $i < 12; $i++) {
+                                                    for ($i = 0; $i < $yorumSayisi; $i++) {
                                                         EchoFunc(str_replace(
                                                             "number",
-                                                            $i,
+                                                           1+ $i,
                                                             str_replace(
                                                                 "message",
-                                                                $listYorumlar[0]->Yorum,
+                                                                $listYorumlar[$i]->Yorum,
                                                                 
                                                                         $tablo
                                                                     )

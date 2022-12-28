@@ -1,5 +1,51 @@
 [
     {
+        "Id": 1,
+        "SirketAdi": "babsaala",
+        "SektorTanim": "eflektronik",
+        "SirketUlke": "türkiyesaffs",
+        "SirketSehir": "istanbufafl",
+        "SirketIlce": "bahçelievlasdfer",
+        "Logo":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg"
+    },
+    {
+        "Id": 2,
+        "SirketAdi": "babsaala",
+        "SektorTanim": "eflektronik",
+        "SirketUlke": "türkiyesaffs",
+        "SirketSehir": "istanbufafl",
+        "SirketIlce": "bahçelievlasdfer",
+        "Logo":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg"
+    },
+    {
+    "Id": 3,
+    "SirketAdi": "babsaala",
+    "SektorTanim": "eflektronik",
+    "SirketUlke": "türkiyesaffs",
+    "SirketSehir": "istanbufafl",
+    "SirketIlce": "bahçelievlasdfer",
+    "Logo":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg"
+},
+    {
+        "Id": 4,
+        "SirketAdi": "babsaala",
+        "SektorTanim": "eflektronik",
+        "SirketUlke": "türkiyesaffs",
+        "SirketSehir": "istanbufafl",
+        "SirketIlce": "bahçelievlasdfer",
+        "Logo":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg"
+    },
+    {
+    "Id": 5,
+    "SirketAdi": "babsaala",
+    "SektorTanim": "eflektronik",
+    "SirketUlke": "türkiyesaffs",
+    "SirketSehir": "istanbufafl",
+    "SirketIlce": "bahçelievlasdfer",
+    "Logo":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg"
+},
+    {
+        "Id": 6,
         "SirketAdi": "babsaala",
         "SektorTanim": "eflektronik",
         "SirketUlke": "türkiyesaffs",
@@ -7,4 +53,5 @@
         "SirketIlce": "bahçelievlasdfer",
         "Logo":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg"
     }
+
 ]
