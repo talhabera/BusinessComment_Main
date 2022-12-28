@@ -1,15 +1,11 @@
 <?php
-$jsonFile = file_get_contents("sample.json");
 
-$donutList = json_decode($jsonFile);
-echo $donutList[0]->kullanici_tip_id->kullanıcı_tip_tanim;
-echo $donutList[0]->id;
-echo $donutList[0]->id;
-echo $donutList[0]->id;
-echo $donutList[1]->id;
+$jsonPersonel = file_get_contents("personelbilgileri.json");
 
+$listPersonel = json_decode($jsonPersonel);
 
-
+$personelSayisi= count($listPersonel);
+echo $personelSayisi;
 /*
 $result = file_get_contents(
     "http://server.com/path",
@@ -23,3 +19,4 @@ if ($result === FALSE) {
 }
 $kisiBilgisi = json_decode($result);
 */
+?>
