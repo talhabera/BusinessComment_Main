@@ -1,73 +1,72 @@
 [
-    {
-        "Id": 1,
-        "YorumYapilankisi": "ahmet",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi bir insandır",
-        "YorumTarihi":"18.11.2000"
-    },
-    {
-        "Id": 2,
-        "YorumYapilankisi": "mahmut",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi birklkasaslla insandır",
-        "YorumTarihi":"18.11.2000"
-    },
-    {
-        "Id": 3,
-        "YorumYapilankisi": "ahmet",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi bir insandır",
-        "YorumTarihi":"18.11.2000"
-    },
-    {
-        "Id": 4,
-        "YorumYapilankisi": "mahmut",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi birklkasaslla insandır",
-        "YorumTarihi":"18.11.2000"
-    },
-    {
-        "Id": 5,
-        "YorumYapilankisi": "ahmet",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi bir insandır",
-        "YorumTarihi":"18.11.2000"
-    },
-    {
-        "Id": 6,
-        "YorumYapilankisi": "mahmut",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi birklkasaslla insandır",
-        "YorumTarihi":"18.11.2000"
-    },
-    {
-        "Id": 7,
-        "YorumYapilankisi": "ahmet",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi bir insandır",
-        "YorumTarihi":"18.11.2000"
-    },
-    {
-        "Id": 8,
-        "YorumYapilankisi": "mahmut",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi birklkasaslla insandır",
-        "YorumTarihi":"18.11.2000"
-    },
-    {
-        "Id": 9,
-        "YorumYapilankisi": "ahmet",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi bir insandır",
-        "YorumTarihi":"18.11.2000"
-    },
-    {
-        "Id": 10,
-        "YorumYapilankisi": "mahmut",
-        "YorumYapankisi":"hüseyin",
-        "Yorum":"ahmey çok iyi birklkasaslla insandır",
-        "YorumTarihi":"18.11.2000"
-    }
-
+  {
+    "Id": 1,
+    "YorumYapilankisi": "ahmet",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi bir insandır",
+    "YorumTarihi": "18.11.2000"
+  },
+  {
+    "Id": 2,
+    "YorumYapilankisi": "mahmut",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi birklkasaslla insandır",
+    "YorumTarihi": "18.11.2000"
+  },
+  {
+    "Id": 3,
+    "YorumYapilankisi": "ahmet",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi bir insandır",
+    "YorumTarihi": "18.11.2000"
+  },
+  {
+    "Id": 4,
+    "YorumYapilankisi": "mahmut",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi birklkasaslla insandır",
+    "YorumTarihi": "18.11.2000"
+  },
+  {
+    "Id": 5,
+    "YorumYapilankisi": "ahmet",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi bir insandır",
+    "YorumTarihi": "18.11.2000"
+  },
+  {
+    "Id": 6,
+    "YorumYapilankisi": "mahmut",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi birklkasaslla insandır",
+    "YorumTarihi": "18.11.2000"
+  },
+  {
+    "Id": 7,
+    "YorumYapilankisi": "ahmet",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi bir insandır",
+    "YorumTarihi": "18.11.2000"
+  },
+  {
+    "Id": 8,
+    "YorumYapilankisi": "mahmut",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi birklkasaslla insandır",
+    "YorumTarihi": "18.11.2000"
+  },
+  {
+    "Id": 9,
+    "YorumYapilankisi": "ahmet",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi bir insandır",
+    "YorumTarihi": "18.11.2000"
+  },
+  {
+    "Id": 10,
+    "YorumYapilankisi": "mahmut",
+    "YorumYapankisi": "hüseyin",
+    "Yorum": "ahmey çok iyi birklkasaslla insandır",
+    "YorumTarihi": "18.11.2000"
+  }
 ]

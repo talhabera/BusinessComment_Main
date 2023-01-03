@@ -11,11 +11,10 @@
     "KullaniciSehir": "istanbul",
     "KullaniciIlce": "bahceelievler",
     "KayitTarihi": "1231124",
-    "Departman":"Bilgi işlem",
-    "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-    "YaptigiYorumSayisi":11,
-    "YapilanYorumSayisi":11
-
+    "Departman": "Bilgi işlem",
+    "Resim": "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+    "YaptigiYorumSayisi": 11,
+    "YapilanYorumSayisi": 11
   },
   {
     "Id": 2,
@@ -29,11 +28,10 @@
     "KullaniciSehir": "istanbul",
     "KullaniciIlce": "bahceelievler",
     "KayitTarihi": "20.12.2022",
-    "Departman":"muhasebe işlem",
-    "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-    "YaptigiYorumSayisi":113,
-    "YapilanYorumSayisi":114
-
+    "Departman": "muhasebe işlem",
+    "Resim": "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+    "YaptigiYorumSayisi": 113,
+    "YapilanYorumSayisi": 114
   },
   {
     "Id": 3,
@@ -47,11 +45,10 @@
     "KullaniciSehir": "istanbul",
     "KullaniciIlce": "bahceelievler",
     "KayitTarihi": "1231124",
-    "Departman":"Bilgi işlem",
-    "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-    "YaptigiYorumSayisi":11,
-    "YapilanYorumSayisi":11
-
+    "Departman": "Bilgi işlem",
+    "Resim": "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+    "YaptigiYorumSayisi": 11,
+    "YapilanYorumSayisi": 11
   },
   {
     "Id": 4,
@@ -65,11 +62,10 @@
     "KullaniciSehir": "istanbul",
     "KullaniciIlce": "bahceelievler",
     "KayitTarihi": "20.12.2022",
-    "Departman":"muhasebe işlem",
-    "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-    "YaptigiYorumSayisi":113,
-    "YapilanYorumSayisi":114
-
+    "Departman": "muhasebe işlem",
+    "Resim": "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+    "YaptigiYorumSayisi": 113,
+    "YapilanYorumSayisi": 114
   },
   {
     "Id": 5,
@@ -83,11 +79,10 @@
     "KullaniciSehir": "istanbul",
     "KullaniciIlce": "bahceelievler",
     "KayitTarihi": "1231124",
-    "Departman":"Bilgi işlem",
-    "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-    "YaptigiYorumSayisi":11,
-    "YapilanYorumSayisi":11
-
+    "Departman": "Bilgi işlem",
+    "Resim": "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+    "YaptigiYorumSayisi": 11,
+    "YapilanYorumSayisi": 11
   },
   {
     "Id": 6,
@@ -101,11 +96,10 @@
     "KullaniciSehir": "istanbul",
     "KullaniciIlce": "bahceelievler",
     "KayitTarihi": "20.12.2022",
-    "Departman":"muhasebe işlem",
-    "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-    "YaptigiYorumSayisi":113,
-    "YapilanYorumSayisi":114
-
+    "Departman": "muhasebe işlem",
+    "Resim": "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+    "YaptigiYorumSayisi": 113,
+    "YapilanYorumSayisi": 114
   },
   {
     "Id": 7,
@@ -119,11 +113,10 @@
     "KullaniciSehir": "istanbul",
     "KullaniciIlce": "bahceelievler",
     "KayitTarihi": "1231124",
-    "Departman":"Bilgi işlem",
-    "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-    "YaptigiYorumSayisi":11,
-    "YapilanYorumSayisi":11
-
+    "Departman": "Bilgi işlem",
+    "Resim": "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+    "YaptigiYorumSayisi": 11,
+    "YapilanYorumSayisi": 11
   },
   {
     "Id": 8,
@@ -137,10 +130,9 @@
     "KullaniciSehir": "istanbul",
     "KullaniciIlce": "bahceelievler",
     "KayitTarihi": "20.12.2022",
-    "Departman":"muhasebe işlem",
-    "Resim":"https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
-    "YaptigiYorumSayisi":113,
-    "YapilanYorumSayisi":114
-
+    "Departman": "muhasebe işlem",
+    "Resim": "https://resim.gelisim.edu.tr/PERSONEL/4430.jpg",
+    "YaptigiYorumSayisi": 113,
+    "YapilanYorumSayisi": 114
   }
 ]
